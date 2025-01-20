@@ -1,158 +1,113 @@
-# Sustain-AI-Thon 
+# DreamFarm - Smart Farming Solution
 
-**DreamFarm** is an innovative solution that leverages AI-powered tools and seamless integration of various services to provide smart farming solutions. The project is powered by DreamFarm (a Flutter-based frontend) and a robust backend infrastructure with GenAI, Django, FastAPI for web scraping, and Streamlit for an end-to-end Gemini chat experience.
+## Brief Introduction
+DreamFarm is an innovative AI-powered smart farming solution that combines IoT integration, soil testing, crop management, and community features to empower farmers. It uses a Flutter-based frontend with a multi-service backend architecture to provide comprehensive agricultural support with local language capabilities.
 
-## Features of DreamFarm
+## Workflow Diagram
+mermaid
+flowchart TD
+    A[Farmer/User] --> B[DreamFarm Flutter App]
+    B --> C[Django Backend]
+    B --> D[GenAI Server]
+    B --> E[FastAPI Web Scraping]
+    B --> F[Streamlit Gemini Chat]
+    
+    C --> G[IOT Integration]
+    C --> H[Soil Testing Service]
+    C --> I[Marketplace]
+    
+    D --> J[Crop Recommendations]
+    D --> K[Pest Disease Detection]
+    
+    E --> L[Agricultural Data Collection]
+    
+    F --> M[Personalized Support]
+    F --> N[Facility Connections]
+    
+    G --> O[Real-time Monitoring]
+    H --> P[Soil Analysis]
+    I --> Q[Buy/Sell Platform]
 
-- Real-time IOT integration and data analysis for efficient crop management, predictive maintenance and live inputs.
-- Soil testing services to help farmers monitor soil conditions.
-- AI-based crop recommendations based on location, soil type, and weather conditions 
-- AI-based pest disease detection and its possible remedies.
-- Integration with the Gemini chat app for personalized support and connection to soil testing facilities, storage facilities and input suppliers.
-- Marketplace and community features for farmers to buy, sell, and connect.
-- FastAPI-based web scraping to retrieve agricultural data from relevant sources.
-- AI-based crop yield predictor using Intel OneAPI.
-- With local language support.
 
----
+## Concept Map
+mermaid
+mindmap
+  root((DreamFarm))
+    AI Solutions
+      Crop Recommendations
+      Disease Detection
+      Yield Prediction
+      GenAI Chat Support
+    IoT Integration
+      Real-time Monitoring
+      Predictive Maintenance
+      Live Inputs
+    Services
+      Soil Testing
+      Storage Facilities
+      Input Suppliers
+    Community
+      Marketplace
+      Farmer Network
+      Knowledge Sharing
+    Infrastructure
+      Flutter Frontend
+      Django Backend
+      FastAPI Scraping
+      Streamlit Apps
+      Intel OneAPI
 
-### Screenshots
 
-Below are screenshots demonstrating various features of DreamFarm:
+## Tech Stack
 
-<p align="center">
-  <img src="https://res.cloudinary.com/dt0ltaylj/image/upload/v1728101993/Screenshot_1728101830_yqzyip.png" alt="Screenshot 1" width="200"/>
-  <img src="https://res.cloudinary.com/dt0ltaylj/image/upload/v1728102006/Screenshot_1728101851_esqis8.png" alt="Screenshot 2" width="200"/>
-  <img src="https://res.cloudinary.com/dt0ltaylj/image/upload/v1728102031/Screenshot_1728101867_mbmreo.png" alt="Screenshot 3" width="200"/>
-</p>
+### Frontend
+- Flutter for cross-platform mobile application
+- Local language support integration
 
-## Requirements to Run the Software
+### Backend Services
+- Django for core backend services
+- FastAPI for web scraping agricultural data
+- GenAI server for AI-powered features
+- Streamlit for Gemini chat interface
 
-Before proceeding, ensure the following dependencies are installed on your machine:
+### AI/ML Components
+- Intel OneAPI for crop yield prediction
+- Gemini for conversational AI
+- Machine learning models for crop recommendations and disease detection
 
-- **Python** (Version 3.7 or above)
-- **Node.js** (Version 14 or above)
-- **Flutter** (Stable version)
+### Infrastructure
+- IoT integration for real-time monitoring
+- Cloud storage for data management
+- API integration for various services
 
----
+## Novelty
 
-## Running the Software
+1. *Comprehensive Integration*: Uniquely combines IoT, AI, and community features in a single platform
+2. *Multi-lingual Support*: Breaks language barriers with local language capabilities
+3. *AI-Powered Decision Making*: Uses advanced AI for crop recommendations and disease detection
+4. *Real-time Monitoring*: Provides immediate insights through IoT integration
+5. *Community-Driven*: Creates a complete ecosystem connecting farmers, suppliers, and facilities
 
-### 1. Run the Flutter Frontend
+## Solution
 
-1. Navigate to the frontend folder:
-   ```bash
-   cd Frontend/dreamfarm
-   ```
-2. Install the required packages by running:
-   ```bash
-   flutter pub get
-   ```
-3. Run the Flutter app using the following command (ensure your emulator or physical device is running):
-   ```bash
-   flutter run
-   ```
+### Smart Farming Implementation
+- Real-time IoT monitoring
+- AI-based crop recommendations
+- Automated disease detection
+- Yield prediction using Intel OneAPI
 
-### 2. Run the GenAI Server
+### Resource Optimization
+- Soil condition monitoring
+- Predictive maintenance
+- Weather-based planning
 
-1. Navigate to the GenAI server backend folder:
-   ```bash
-   cd Backend/genai
-   ```
-2. Install the required Node.js packages:
-   ```bash
-   npm install
-   ```
-3. Start the GenAI server:
-   ```bash
-   npm run start
-   ```
+### Community Building
+- Marketplace for direct trading
+- Knowledge sharing platform
+- Connection to facilities and suppliers
 
-### 3. Run the Django Server
-
-1. Navigate to the Django server folder:
-   ```bash
-   cd Backend/server
-   ```
-2. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Start the Django server:
-   ```bash
-   python manage.py runserver
-   ```
-
-### 4. Run the Web Scraping FastAPI Server
-
-1. Navigate to the web scraping service folder:
-   ```bash
-   cd Backend/server/webscraping/scraping
-   ```
-2. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Start the FastAPI server:
-   ```bash
-   uvicorn main:app --host 127.0.0.1 --port 8001
-   ```
-
-### 5. Run the Gemini Streamlit App
-
-1. Navigate to the Gemini chat project folder:
-   ```bash
-   cd Backend/server/Gemini_chat/End-To-End-Gemini-Project
-   ```
-2. Install Streamlit:
-   ```bash
-   pip install streamlit
-   ```
-3. Start the Streamlit server:
-   ```bash
-   streamlit run main.py
-   ```
-
-### 6. Train the Data
-
-1. Install the scikit-learn-intelex package:
-   ```bash
-   pip install scikit-learn-intelex
-   ```
-2. Navigate to the intelex directory:
-   ```bash
-   cd Backend/intelex
-   ```
-3. Download the dataset from the following link: [Crop Yield Dataset](https://www.kaggle.com/datasets/samuelotiattakorah/agriculture-crop-yield)
-4. Train the model by running:
-   ```bash
-   python main.py
-   ```
-   This will generate two pickle files: one using `RandomForestRegressor` and another using `Linear Regression`. Modify the pickle files accordingly in the `app.py` for the Streamlit application.
-
-### 7. Run the Yield Predictor Streamlit App
-
-1. Ensure Streamlit is installed:
-   ```bash
-   pip install streamlit
-   ```
-2. Navigate to the intelex directory:
-   ```bash
-   cd Backend/intelex
-   ```
-3. Start the Streamlit app:
-   ```bash
-   streamlit run app.py
-   ```
-
----
-
-## Additional Notes
-
-- Ensure all services are running properly to facilitate communication between different components of the application.
-- You can access the respective services through the following URLs:
-  - Django Server: `http://127.0.0.1:8000`
-  - FastAPI Server: `http://127.0.0.1:8001`
-  - Streamlit Apps: `http://localhost:8501`
-
-Feel free to reach out if you have any questions or need further assistance!
+### Technical Implementation
+- Modular architecture with separate services
+- Scalable backend infrastructure
+- User-friendly mobile interface
+- Integration of multiple AI services
