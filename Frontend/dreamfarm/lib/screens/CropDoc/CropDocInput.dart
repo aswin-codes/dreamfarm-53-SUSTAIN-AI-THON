@@ -101,6 +101,7 @@ class _CropDocInputState extends State<CropDocInput> {
         await _sendLinkToBackend(_cloudinaryImageUrl);
       }
     } catch (e) {
+      print(e);
       setState(() {
         _apiResponse = 'An error occurred: $e';
       });
