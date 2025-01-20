@@ -52,7 +52,7 @@ class _CropDocInputState extends State<CropDocInput> {
 
   Future<void> _sendLinkToBackend(String imageUrl) async {
     const backendUrl =
-        'http://10.0.2.2:3000/analyze-image'; // Replace with your backend URL
+        'https://node-gemini.vercel.app/analyze-image'; // Replace with your backend URL
 
     print(imageUrl);
 
