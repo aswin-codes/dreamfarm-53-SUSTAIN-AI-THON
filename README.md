@@ -1,4 +1,4 @@
-# IntelGenAI (Hackathon)
+# Sustain-AI-Thon 
 
 **DreamFarm** is an innovative solution that leverages AI-powered tools and seamless integration of various services to provide smart farming solutions. The project is powered by DreamFarm (a Flutter-based frontend) and a robust backend infrastructure with GenAI, Django, FastAPI for web scraping, and Streamlit for an end-to-end Gemini chat experience.
 
