@@ -24,7 +24,6 @@ DreamFarm is an innovative AI-powered smart farming solution that combines IoT i
 - Streamlit for Gemini chat interface
 
 ### AI/ML Components
-- Intel OneAPI for crop yield prediction
 - Gemini for conversational AI
 - Machine learning models for crop recommendations and disease detection
 
