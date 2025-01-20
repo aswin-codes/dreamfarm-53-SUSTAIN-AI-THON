@@ -11,6 +11,7 @@ DreamFarm is an innovative AI-powered smart farming solution that combines IoT i
 ![Workflow](https://github.com/user-attachments/assets/546963fe-76e8-4077-af07-b173e2079951)
 
 ## Tech Stack
+![WhatsApp Image 2025-01-20 at 22 05 16_bac566fe](https://github.com/user-attachments/assets/08cdacde-da75-4e0a-b536-61102529ba02)
 
 ### Frontend
 - Flutter for cross-platform mobile application
